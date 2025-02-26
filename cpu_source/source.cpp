@@ -71,12 +71,7 @@
 #else
 
 uint32_t inline _mm_popcnt_u32(uint32_t x) {
-    uint32_t count = 0;
-    while (x) {
-        x &= (x - 1);
-        count++;
-    }
-    return count;
+    return __builtin_popcount(x);
 }
 
 #endif
