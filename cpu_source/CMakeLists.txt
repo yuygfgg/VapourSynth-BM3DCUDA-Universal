@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 3.20)
 
 project(BM3DCPU VERSION 2.6 LANGUAGES CXX)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Ofast -fopenmp-simd -march=native")
+# Use LTO
+cmake_policy(SET CMP0069 NEW)
+set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Ofast -fopenmp-simd -march=native -mllvm -polly -mllvm -polly-vectorizer=stripmine  -Rpass-analysis=loop-vectorize -Rpass=loop-vectorize")
 
 add_library(bm3dcpu SHARED source.cpp)
 target_include_directories(bm3dcpu PRIVATE ${VAPOURSYNTH_INCLUDE_DIRECTORY})
