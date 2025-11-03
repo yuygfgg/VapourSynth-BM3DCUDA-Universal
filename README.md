@@ -4,6 +4,8 @@ Copyright© 2021 WolframRhodium
 
 Universal, crossplatform fork of VapourSynth-BM3DCUDA, CPU implementation only.
 
+For Apple Metal implementation, refer to [Vapoursynth-BM3DMETAL](https://github.com/yuygfgg/Vapoursynth-BM3DMETAL)
+
 ## Description
 
 This folk of VapourSynth-BM3DCUDA has been adapted for cross-platform compatibility and is exclusively available for CPU-based platforms. It removes all GPU-related implementations (CUDA, etc.) and focuses on utilizing the SIMD everywhere library to ensure compatibility across virtually all platforms with a C compiler. The primary purpose of this adaptation is to maintain compatibility with the numerous existing wrappers and interfaces initially designed for the BM3DCUDA version.
