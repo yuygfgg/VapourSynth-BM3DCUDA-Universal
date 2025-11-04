@@ -4,7 +4,7 @@ Copyright© 2021 WolframRhodium
 
 Universal, crossplatform fork of VapourSynth-BM3DCUDA, CPU implementation only.
 
-For Apple Metal implementation, refer to [Vapoursynth-BM3DMETAL](https://github.com/yuygfgg/Vapoursynth-BM3DMETAL)
+For Apple Metal implementation, refer to [Vapoursynth-BM3DMETAL](https://github.com/Sunflower-Dolls/Vapoursynth-BM3DMETAL)
 
 ## Description
 
